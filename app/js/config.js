@@ -5,20 +5,18 @@ var browserConfig = {
 
 /* configure requirejs */
 require.config({
-	baseUrl : "/app/js/",
+	baseUrl : "js/",
 	paths   : {
 		// vendor libraries
 		"knockout"              : "vendor/knockout-3.3.0",            // http://knockoutjs.com/downloads/
 		"jqueryHistoryManager"  : "vendor/jquery.history",            // https://github.com/browserstate/history.js
 		"pager"       			: "vendor/pager",                     // https://github.com/finnsson/pagerjs
+		"knockoutValidation"    : "vendor/knockout.validation.min",   // https://github.com/Knockout-Contrib/Knockout-Validation
 		"text"                  : "vendor/text",                      // http://requirejs.org/docs/download.html
 		"i18n"                  : "vendor/i18n",                      // http://requirejs.org/docs/download.html
 		"jquery"                : "vendor/jquery-1.11.3.min",         // https://jquery.com/download/
 		"jquery.mockjax"        : "vendor/jquery.mockjax",            // https://github.com/jakerella/jquery-mockjax
-		"bootstrap"             : "vendor/bootstrap.min",             // http://getbootstrap.com/getting-started/
-
-		// core view module(s)
-		"viewLogin"             : "view/login"
+		"bootstrap"             : "vendor/bootstrap.min"              // http://getbootstrap.com/getting-started/
 	},
 	shim    : {
 		"pager": {
